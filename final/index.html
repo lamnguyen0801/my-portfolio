@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/santize.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../components/button/btn-1.css">
+    <link rel="stylesheet" href="../components/button/btn-2.css">
+    <link rel="stylesheet" href="../components/button/btn-3.css">
+    <link rel="stylesheet" href="../components/section-title/section-title.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../components/carousel/carousel.css">
+    <link rel="stylesheet" href="../components/form/form.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-wrapper"></div>
+            <div class="header">
+                <h1 class="header__title">Lam's Portfolio</h1>
+                <ul class="header__nav">
+                    <li>
+                        <a href="#home">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#project">
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills">
+                            <span>Skills</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header__mobi">
+                    <input type="checkbox" id="menu" class="header__input" />
+                    <label for="menu" class="header__icon header__icon--show"><i class="fa-solid fa-bars"></i></label>
+                    <label for="menu" class="header__icon header__icon--collapse"><i class="fa-solid fa-x"></i></label>
+                    <ul class="header__nav">
+                        <li>
+                            <a href="#home">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about">
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#project">
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#skills">
+                                <span>Skills</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="home hello" id="home">
+            <div class="home__content">
+                <p class="home__content--hello">Hello!</p>
+                <p class="home__content--name">My name is <br><span>Nguyen Manh Lam</span></p>
+                <p class="home__content--job">I'm looking for a <br><span>Front-End Developer</span> internship</p>
+                <div class="home__btn">
+                    <a href="./file/CV-TTS.pdf" download class="btn-1 btn-1--color-two">
+                        <i class="fa-solid fa-circle-down"></i>
+                        CV
+                    </a>
+                    <a href="#contact" class="btn-1 btn-1--color-three">Contact me</a>
+                </div>
+            </div>
+            <div class="home__image">
+                <img src="../images/me.jpg" alt="image about me" />
+            </div>
+        </div>
+
+        <div class="about hello" id="about">
+            <div class="about__image">
+                <div class="about__frame-img"></div>
+            </div>
+            <div class="about__content">
+                <div class="section-title">About me</div>
+                <div class="about__inner-content">
+                    <p><span>Name: </span>Nguyen Manh Lam</p>
+                    <p><span>Date of birth:</span> January 08, 2002</p>
+                    <p><span>Address:</span> Trung Van, Nam Tu Liem, Ha Noi</p>
+                    <p><span>College:</span> Post and Telecommunications Institute of Technology (2020 - 2025)</p>
+                    <p><span>Major:</span> Electronics and telecommunications</p>
+                    <p><span>Specialization:</span> Internet of Things Systems</p>
+                    <p><span>Email:</span> manhlam080102@gmail.com</p>
+                    <p><span>Phone:</span> 0375 806 966</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project hello" id="project">
+            <div class="section-title">My project</div>
+            <div class="project__inner">
+                <div class="project__content">
+                    <div class="project__name">
+                        <div class="project__name-img">
+                            <img src="../images/arcticons--projectm.png" alt="ảnh icon project" />
+                        </div>
+                        <p>Multiple choice questions about driving license</p>
+                    </div>
+                    <div class="project__inner-content">
+                        <p class="project__desc">
+                            Website for practicing car driving license exam <br />with <span>many topics</span> and
+                            <span>mock tests</span>
+                        </p>
+                        <div class="project__tech">
+                            <div class="project__tech-block">
+                                <img src="../images/react-pj.png" alt="ảnh icon ReactJS">
+                                <span>ReactJS</span>
+                            </div>
+                            <div class="project__tech-block">
+                                <img src="../images/sass-pj.png" alt="ảnh icon SASS">
+                                <span>SASS</span>
+                            </div>
+                            <div class="project__tech-block">
+                                <img src="../images/antdesign-pj.png" alt="ảnh icon antd">
+                                <span>Ant Design</span>
+                            </div>
+                            <div class="project__tech-block">
+                                <img src="../images/json-pj.png" alt="ảnh icon json-server">
+                                <span>JSON Server</span>
+                            </div>
+                        </div>
+                        <div class="project__demo-source">
+                            <a href="https://quiz-gplx.vercel.app/" target="_blank" class="btn-3 btn-3--color-two">
+                                Demo
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/lamnguyen0801/Quiz-GPLX" target="_blank" class="btn-3 btn-3--color-three">
+                                Source
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../images/slide1.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../images/slide2.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../images/slide3.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../images/slide4.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../images/slide5.png" />
+                            </div>
+                        </div>
+            
+                        <div class="swiper-button swiper-button-prev-custom">
+                            <i class="fa-solid fa-circle-chevron-left"></i>
+                        </div>
+                        <div class="swiper-button swiper-button-next-custom">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills" id="skills">
+            <div class="section-title">My skills</div>
+            <div class="skills__tech">
+                <p class="skills__title">Programming Languages & Tools</p>
+                <div class="skills__list-tech">
+                    <img src="../images/html5.png" />
+                    <img src="../images/css3.png" />
+                    <img src="../images/javascript.png" />
+                    <img src="../images/sass.png" />
+                    <img src="../images/bootstrap.png" />
+                    <img src="../images/tailwindcss.png" />
+                    <img src="../images/antdesign.png" />
+                    <img src="../images/react.png" />
+                    <img src="../images/github.png" />
+                </div>
+            </div>
+            <div class="skills__soft">
+                <p class="skills__title">Soft Skills</p>
+                <ul class="skills__list-soft">
+                    <li>Teamwork</li>
+                    <li>Time management</li>
+                    <li>Basic English reading and comprehension</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <div class="section-title">Contact me</div>
+            <div class="contact-info">
+                <div class="contact-info__inner">
+                    <div class="contact-info__icon">
+                        <a href="tel:+84375806966">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                    <div class="contact-info__title">
+                        Contact number
+                    </div>
+                    <div class="contact-info__content">
+                        <a href="tel:+84375806966">
+                            0375 806 966
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-info__inner">
+                    <div class="contact-info__icon">
+                        <a href="mailto:manhlam080102@gmail.com">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="contact-info__title">
+                        Email address
+                    </div>
+                    <div class="contact-info__content">
+                        <a href="mailto:manhlam080102@gmail.com">
+                            manhlam080102@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-info__inner">
+                    <div class="contact-info__icon">
+                        <a href="https://github.com/lamnguyen0801" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="contact-info__title">
+                        Github
+                    </div>
+                    <div class="contact-info__content">
+                        <a href="https://github.com/lamnguyen0801">
+                            https://github.com/lamnguyen0801
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact__form">
+                <div class="form">
+                    <form action="https://formspree.io/f/mzzbzboa" method="POST">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your name" name="name" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your email" name="email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" name="subject" />
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message" name="message" rows="9"></textarea>
+                        </div>
+                        <button class="btn-2" type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            Copyright ©2024 All rights reserved | This template is made by Lam
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../components/carousel/carousel.js" type="module"></script>
+</body>
+
+</html>

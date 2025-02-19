@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --color-bg: #000; 
+    --color-one: #fff;
+    --color-two: #FFBD39;
+    --color-three: #999;
+    --font: "Inter", sans-serif;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--color-bg);
+    color: var(--color-one);
+    font-size: 15px;
+    overflow-x: hidden;
+}
+
+button {
+    font-family: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 1.35em;
+    display: flex;
+    flex-direction: column;
+    gap: 7em;
+}
+
+@media (max-width: 1200px){
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px){
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 840px;
+    }
+}
+
+@media (max-width: 768px){
+    body {
+        font-size: 13px;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 460px;
+        gap: 8em; 
+    }
+}
+
+@media (max-width: 426px) {
+    .container {
+        max-width: 380px;
+    }
+}
+
+@media (max-width: 376px) {
+    .container {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 300px;
+        gap: 5em;
+    }
+}
+
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        /* scale: 0.4; */
+    }
+    to{
+        opacity: 1;
+        /* scale: 1; */
+    }
+}
+
+.container > div {
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}

@@ -1,0 +1,85 @@
+#about {
+    scroll-margin-top: 145px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 6.7em;
+    flex-wrap: wrap;
+}
+
+.about__image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px; /* trừ đi outline */
+}
+
+.about__image .about__frame-img {
+    height: 21em;
+    width: 21em;
+    background-image: url("../images/me3.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 15px solid rgba(255, 189, 57, 1);
+    outline: 15px solid rgba(255, 189, 57, 0.3);
+}
+
+.about__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.about__content .section-title::after {
+    content: "About";
+}
+
+.about__content p {
+    color: var(--color-three);
+    font-size: 1em;
+}
+
+.about__content p span {
+    color: var(--color-one);
+}
+
+@media (max-width: 992px){
+    .about__content p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px){
+    .about {
+        gap: 3.85em;
+    }
+
+    .about__image .about__frame-img {
+        height: 18.5em;
+        width: 18.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    #about {
+        scroll-margin-top: 100px;
+    }
+
+    .about {
+        gap: 2em;
+    }
+
+    .about__image {
+        width: 100%;
+    }
+
+    .about__image .about__frame-img {
+        height: 15em;
+        width: 15em;
+    }
+}
